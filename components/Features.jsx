@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 const Features = () => {
   return (
     <div className="bg-red-200">
@@ -12,8 +13,14 @@ const Features = () => {
             Mac and iOS apps will help you organize everything.
           </p>
         </div>
-        <div className="md:flex-row">
-          <div>image</div>
+        <div className="flex flex-col md:flex-row">
+          <div>
+            <Image
+              src="/static/images/image-computer.png"
+              width="400"
+              height="500"
+            />
+          </div>
           <div>
             <div>
               <div>Quick Search</div>
@@ -42,7 +49,13 @@ const Features = () => {
           Whether you’re on the go, or at your computer, you can access all your
           Clipboard snippets in a few simple clicks.
         </p>
-        <div>imageeee</div>
+        <div>
+          <Image
+            src="/static/images/image-devices.png"
+            width="300"
+            height="400"
+          />
+        </div>
       </div>
       {/* supercharge your workflow */}
       <div>

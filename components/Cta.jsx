@@ -10,7 +10,7 @@ const Cta = () => {
           with iCloud and you’re ready to start adding to your clipboard.
         </p>
       </div>
-      <div className="md:flex">
+      <div className="flex flex-col md:flex-row">
         <Link href="/">Download for iOS</Link>
         <Link href="/">Download for Mac</Link>
       </div>
