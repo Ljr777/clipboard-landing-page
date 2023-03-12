@@ -11,12 +11,12 @@ const Footer = () => {
     "Install Guide",
   ];
   return (
-    <div>
+    <div className="mt-36 flex flex-col md:flex-row items-center justify-center text-center gap-y-10">
       <div>
-        <Image src="/static/images/logo.svg" width="20" height="20" />
+        <Image src="/static/images/logo.svg" width="50" height="50" />
       </div>
-      <ul>
-        {options.map((option, key) => {
+      <ul className="flex flex-col gap-y-5 font-bold text-[#9fabb2]">
+        {options.map((option, i) => {
           return (
             <li>
               <Link href="/">{option}</Link>
@@ -25,7 +25,7 @@ const Footer = () => {
         })}
       </ul>
       {/* socials part */}
-      <div className="">
+      <div className="flex flex-row gap-x-10">
         {socials.map((social, key) => {
           return (
             <div>

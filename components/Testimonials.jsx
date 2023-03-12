@@ -4,13 +4,13 @@ import Image from "next/image";
 const Testimonials = () => {
   const logos = ["google", "ibm", "microsoft", "hp", "vector-graphics"];
   return (
-    <div className="flex flex-col md:flex-row">
+    <div className="mt-36 flex flex-col md:flex-row items-center gap-12">
       {logos.map((logo) => {
         return (
           <Image
             src={`/static/images/logo-${logo}.png`}
-            width="100"
-            height="50"
+            width="150"
+            height="100"
           />
         );
       })}

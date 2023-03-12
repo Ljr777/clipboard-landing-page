@@ -17,7 +17,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="">
-        <div>
+        <div className="px-5 pt-10 pb-7">
           <Hero />
           <Features />
           <Testimonials />
